@@ -7,18 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Parcial1
 {
-    public partial class WebForm4 : System.Web.UI.Page
+    public partial class WebForm6 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            
-                Response.Redirect("WEbForm5.aspx");
-            
         }
     }
 }

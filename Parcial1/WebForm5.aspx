@@ -10,7 +10,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="d-flex justify-content-center align-items-center">
             <div>
                 <div class="card" style="width: 60rem;">
                     <div class="card-body">
@@ -68,8 +68,8 @@
                             </div>
                         </div>
                         <br />
-                        <div class="row g-3 align-items-center">
-                            
+                        <div class="row g-3 align-items-center text-end">
+
                             <div class="col-auto">
                                 <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
                             </div>
@@ -85,7 +85,12 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" Style="color: red;" runat="server" ErrorMessage="Campo Requerido*" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" Style="color: red;" runat="server" ErrorMessage="Campo Requerido*" ControlToValidate="TextBox2"></asp:RequiredFieldValidator>
                         <br />
-                        <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Continuar" OnClick="Button1_Click" />
+                        <div id="Encuesta" runat="server" visible="false" class="alert alert-success" role="alert">
+                            ¿Deseas realizar una encuesta de satisfaccion?
+                            <asp:Button ID="Button2" class="btn btn-outline-success" runat="server" Text="Realizar" OnClick="Button2_Click" />
+                        </div>
+                        <br />
+                        <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Realizar" OnClick="Button1_Click" />
                     </div>
                 </div>
             </div>

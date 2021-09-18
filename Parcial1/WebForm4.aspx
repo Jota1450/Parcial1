@@ -13,7 +13,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <div>
+            <div class="d-flex justify-content-center align-items-center">
                 <div class="card" style="width: 40rem;">
                     <div class="card-body">
                         <div class="row g-3 align-items-center">
@@ -21,10 +21,10 @@
                                 <asp:TextBox ID="TextBox1" placeholder="Nombre del cliente" class="form-control" runat="server"></asp:TextBox>
                             </div>
                             <div class="col-auto">
-                                <asp:TextBox ID="TextBox2" placeholder="Email cliente" class="form-control" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="TextBox2" placeholder="Email cliente" class="form-control" runat="server" TextMode="Email"></asp:TextBox>
                             </div>
                             <div class="col-auto">
-                                <asp:TextBox ID="TextBox6" placeholder="Numero factura" class="form-control" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="TextBox6" placeholder="Numero factura" class="form-control" runat="server" TextMode="Number"></asp:TextBox>
                             </div>
                         </div>
                         <br />
@@ -53,7 +53,7 @@
                                 <asp:TextBox ID="TextBox4" placeholder="Ciudad" class="form-control" runat="server"></asp:TextBox>
                             </div>
                             <div class="col-auto">
-                                <asp:TextBox ID="TextBox5" placeholder="Codigo postal" class="form-control" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="TextBox5" placeholder="Codigo postal" class="form-control" TextMode="Number" runat="server"></asp:TextBox>
                             </div>
                         </div>
 

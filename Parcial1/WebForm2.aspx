@@ -65,7 +65,7 @@
                             <div class="form-group">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text">Nombre</span>
+                                        <span class="input-group-text">Confirmar</span>
                                     </div>
                                     <asp:TextBox ID="TextBox5" class="form-control" runat="server" TextMode="Password"></asp:TextBox>
                                 </div>

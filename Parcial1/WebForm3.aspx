@@ -10,7 +10,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="d-flex justify-content-center align-items-center">
             <div class="card" style="width: 40rem;">
                 <div class="card-body">
                     <div class="row g-3 align-items-center">
@@ -40,7 +40,7 @@
                             <asp:TextBox ID="TextBox4" placeholder="Ciudad" class="form-control" runat="server"></asp:TextBox>
                         </div>
                         <div class="col-auto">
-                            <asp:TextBox ID="TextBox5" placeholder="Codigo postal" class="form-control" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="TextBox5" placeholder="Codigo postal" class="form-control" TextMode="Number" runat="server"></asp:TextBox>
                         </div>
                     </div>
 
@@ -72,10 +72,11 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" Style="color: red;" runat="server" ErrorMessage="Campo Requerido*" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" Style="color: red;" runat="server" ErrorMessage="Campo Requerido*" ControlToValidate="TextBox2"></asp:RequiredFieldValidator>
                     <br />
+                    <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Continuar" OnClick="Button1_Click" />
                 </div>
             </div>
         </div>
-        <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Continuar" OnClick="Button1_Click" />
+        
     </form>
 </body>
 </html>

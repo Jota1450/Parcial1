@@ -16,10 +16,9 @@ namespace Parcial1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (TextBox1.Text == TextBox2.Text)
-            {
+            
                 Response.Redirect("WEbForm4.aspx");
-            }
+            
         }
     }
 }

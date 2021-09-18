@@ -22,7 +22,7 @@ namespace Parcial1
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            double c1, c2, c3, p1, p2, p3, total, totaliva, totalpagar;
+            double c1, c2, c3, p1, p2, p3, total, totaliva, totalpagar, aux;
 
             c1 = Double.Parse(TextBox3.Text);
             p1 = Double.Parse(TextBox4.Text);
@@ -37,14 +37,23 @@ namespace Parcial1
             totaliva = total * 0.19;
             totalpagar = total + totaliva;
 
-            Label1.Text = "total: " + (c1 * p1);
-            Label2.Text = "total: " + (c2 * p2);
-            Label3.Text = "total: " + (c3 * p3);
+            aux = c1 * p1;
+            Label1.Text = "total: " + aux;
+            aux = c2 * p2;
+            Label2.Text = "total: " + aux;
+            aux = c3 * p3;
+            Label3.Text = "total: " + aux;
 
             Label4.Text = "Subtotal: " + total;
             Label5.Text = "IVA: " + totaliva;
             Label6.Text = "Total: " + totalpagar;
+            Encuesta.Visible = true;
 
         }
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm6.aspx");
+        }
+
     }
 }
